@@ -1,0 +1,15 @@
+:root { --bg:#ffffff; --text:#1d1a29; --muted:#625c78; --accent:#6d3df0; --line:#e6e2f2; color-scheme: light dark; }
+@media (prefers-color-scheme: dark) { :root { --bg:#0f0c19; --text:#ece9f7; --muted:#a29bbd; --accent:#a78bfa; --line:#2a2440; } }
+* { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:var(--text); font:17px/1.7 Georgia, "Times New Roman", serif; }
+main { max-width:700px; margin:0 auto; padding:48px 20px 72px; }
+nav { display:flex; gap:20px; padding:16px 20px; max-width:700px; margin:0 auto; border-bottom:1px solid var(--line); font-family:"Segoe UI",system-ui,sans-serif; font-size:15px; }
+nav a { color:var(--muted); text-decoration:none; }
+nav a:hover, nav a[aria-current] { color:var(--accent); }
+h1 { font:700 32px/1.25 "Segoe UI",system-ui,sans-serif; margin:0 0 6px; }
+h2 { font:600 20px/1.3 "Segoe UI",system-ui,sans-serif; margin:36px 0 8px; }
+p, li { margin:0 0 12px; }
+ul { padding-left: 22px; }
+.updated { color:var(--muted); font-family:"Segoe UI",system-ui,sans-serif; font-size:14px; margin-bottom:28px; }
+a { color:var(--accent); }
+footer { color:var(--muted); font-family:"Segoe UI",system-ui,sans-serif; font-size:14px; margin-top:48px; border-top:1px solid var(--line); padding-top:16px; }
